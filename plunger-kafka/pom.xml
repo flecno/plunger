@@ -12,6 +12,13 @@
 		<version>1.0.1</version>
 	</parent>
 
+	<repositories>
+		<repository>
+			<id>confluent</id>
+			<url>https://packages.confluent.io/maven/</url>
+		</repository>
+	</repositories>
+
 	<dependencies>
 		<dependency>
 			<groupId>de.galan</groupId>

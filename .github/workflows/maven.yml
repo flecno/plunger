@@ -23,12 +23,8 @@ jobs:
         export PLUNGER_HOME="$(pwd)/dist"
         mkdir "${PLUNGER_HOME}"
         ./plunger-support/install.sh
-    - name: Create release archive
-      run: |
-        export PLUNGER_HOME="$(pwd)/dist"
-        ls -lR $PLUNGER_HOME
-        bash -x ./plunger-support/release.sh
-    - uses: actions/upload-artifact@v2
+    - name: Collect release artifact
+      uses: actions/upload-artifact@v2
       with:
         name: Package
-        path: plunger-support/releases
+        path: dist

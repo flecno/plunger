@@ -27,3 +27,7 @@ jobs:
       run: |
         export PLUNGER_HOME="$(pwd)/dist"
         bash -x ./plunger-support/release.sh
+    - uses: actions/upload-artifact@v2
+      with:
+        name: Package
+        path: plunger-support/releases

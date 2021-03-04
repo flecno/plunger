@@ -1,5 +1,8 @@
 */target/**/*
 */target/*
 plunger-support/plunger
+plunger-support/releases
 *.swp
 .idea/*
+*.iml
+dist

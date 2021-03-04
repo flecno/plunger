@@ -15,7 +15,7 @@ cp ${PATH_SCRIPT}/../README.md ${PATH_TARGET}
 cp ${PATH_SCRIPT}/../LICENCE ${PATH_TARGET}
 
 mkdir -p ${PATH_RELEASES}
-tar czf ${PATH_SCRIPT}/releases/plunger-${VERSION}.tgz -C ${PLUNGER_HOME}/.. plunger
+tar czf ${PATH_SCRIPT}/releases/plunger-${VERSION}.tgz -C ${PATH_SCRIPT} plunger
 rm -rf ${PATH_TARGET}
 
 echo "Created ${PATH_RELEASES}/plunger-${VERSION}.tgz"

@@ -11,10 +11,7 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-    env:
-      PLUNGER_HOME: $()
     steps:
     - uses: actions/checkout@v2
     - name: Set up JDK 11
@@ -29,4 +26,4 @@ jobs:
     - name: Create release archive
       run: |
         export PLUNGER_HOME="$(pwd)/dist"
-        ./plunger-support/release.sh
+        bash -x ./plunger-support/release.sh

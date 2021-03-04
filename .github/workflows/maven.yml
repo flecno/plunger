@@ -20,8 +20,8 @@ jobs:
         java-version: 11
     - name: Build all modules with Maven
       run: |
-        export PLUNGER_HOME="$(pwd)/dist"
-        mkdir "${PLUNGER_HOME}"
+        export PLUNGER_HOME="$(pwd)/dist/plunger"
+        mkdir -p "${PLUNGER_HOME}"
         ./plunger-support/install.sh
     - name: Create release archive
       run: |

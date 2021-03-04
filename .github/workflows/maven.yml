@@ -26,6 +26,7 @@ jobs:
     - name: Create release archive
       run: |
         export PLUNGER_HOME="$(pwd)/dist"
+        ls -lR $PLUNGER_HOME
         bash -x ./plunger-support/release.sh
     - uses: actions/upload-artifact@v2
       with:

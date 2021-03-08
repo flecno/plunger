@@ -5,7 +5,6 @@ import static org.fusesource.jansi.Ansi.*;
 import java.io.BufferedWriter;
 import java.io.FileOutputStream;
 import java.io.OutputStreamWriter;
-import java.io.PrintStream;
 import java.io.PrintWriter;
 import java.nio.charset.StandardCharsets;
 
@@ -25,7 +24,6 @@ public class Output {
 	// 10k local
 	// with sout: 340s
 	// with buffer: 12s
-	// private static PrintStream out = System.out;
 
 
 	public static void setColor(boolean colors) {

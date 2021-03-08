@@ -108,6 +108,7 @@ public abstract class AbstractCatCommand extends AbstractCommand {
 				Output.println(Color.YELLOW, message.getBody());
 			}
 		}
+		Output.flush();
 	}
 
 
